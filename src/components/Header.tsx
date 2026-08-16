@@ -37,7 +37,7 @@ export default function Header() {
           {/* Action Button */}
           <div className="flex items-center gap-3">
             <Button variant="navy" size="md" href="#simulateur">
-              S&apos;inscrire
+              Test d&apos;éligibilité
             </Button>
             <button
               onClick={() => setMobileMenuOpen(true)}

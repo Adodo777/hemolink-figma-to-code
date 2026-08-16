@@ -41,9 +41,8 @@ export default function Hero() {
           {/* Boutons CTA Standardisés */}
           <div className="flex flex-wrap justify-center gap-4 mt-2">
             <Button variant="primary" size="lg" href="#simulateur">
-              S’inscrire pour un don
+              Test d'éligibilité
             </Button>
-
             <Button variant="outline-white" size="lg" href="#centres">
               Découvrir les centres
             </Button>

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HemoLink Bénin — Chaque Don Sauve des Vies",
     description: "Plateforme numérique citoyenne dédiée à la sensibilisation et à l'orientation des donneurs de sang au Bénin.",
-    url: "https://hemolink.bj", // Exemple d'URL
+    url: "https://hemolink.marcosado.site/",
     siteName: "HemoLink Bénin",
     images: [
       {
