@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-poppins), sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .hemo-container {
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .hemo-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .interactive-card {
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .interactive-card:hover {
+    transform: translateY(-3px);
+    border-color: #cbd5e1;
+  }
+}
+
+@layer utilities {
+  .font-hero-title {
+    font-family: var(--font-syne), sans-serif;
+  }
+
+  .font-script {
+    font-family: var(--font-caveat), cursive;
+  }
+}
