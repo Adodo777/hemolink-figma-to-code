@@ -64,7 +64,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`scroll-smooth ${poppins.variable} ${syne.variable} ${caveat.variable}`}>
-      <body className="min-h-screen antialiased selection:bg-blood-600 selection:text-white">
+      <body className="min-h-svh antialiased selection:bg-blood-600 selection:text-white">
         {children}
       </body>
     </html>

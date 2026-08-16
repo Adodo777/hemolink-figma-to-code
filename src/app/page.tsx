@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-svh flex flex-col">
       <Header />
       <Hero />
       <FloatingReserves />

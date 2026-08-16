@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="relative w-full pt-4 md:pt-6 flex justify-center z-30 px-4 md:px-6">
+      <header className="sticky top-0 w-full pt-4 md:pt-6 flex justify-center z-50 px-4 md:px-6 transition-all">
         <div className="bg-white px-6 sm:px-10 py-3.5 rounded-full flex items-center justify-between gap-6 sm:gap-12 w-full max-w-[1320px] border border-blood-gray-200">
           {/* Logo Image */}
           <Link href="/" className="flex items-center group text-decoration-none" aria-label="HemoLink Accueil">

@@ -220,14 +220,33 @@ Refus d'une grille de cartes classiques avec barre de recherche (trop orienté "
 ---
 
 ### Prompt 20 — Git Remote, Branche Main & Push Final
-> « add le remote : https://github.com/Adodo777/hemolink-figma-to-code.git »
-> « n'oublie pas le prompt ! et profite pour me cree la branche main et fait le push »
+> « Ajoute le remote : https://github.com/Adodo777/hemolink-figma-to-code.git »
+> « N'oublie pas le prompt ! Et profites-en pour me créer la branche main et faire le push »
 
 **Ajustements :**
 - Ajout du dépôt distant GitHub.
 - Renommage de la branche locale en `main`.
 - Validation de l'ensemble des ajustements (SEO, typographie, nettoyage des fichiers inutilisés).
 - Déploiement du code (push) sur le dépôt distant officiel du challenge.
+
+---
+
+### Prompt 21 — UX de Navigation & Ajustement CSS Moderne (SVH)
+> « Le header n'a qu'à être sticky au scroll, et au lieu de screen que tu utilises depuis le début, utilise plutôt svh ! »
+> « N'oublie pas le fichier prompt »
+
+**Ajustements :**
+- Configuration du `Header` en position `sticky top-0` avec un z-index élevé (`z-50`) pour qu'il reste toujours accessible lors du défilement.
+- Remplacement global des anciennes unités `min-h-screen` par la nouvelle unité CSS `min-h-svh` (Small Viewport Height) pour une prise en charge parfaite de la barre d'adresse mobile sur iOS et Android (évite le recadrage disgracieux).
+
+---
+
+### Prompt 22 — Refactorisation d'Espacements Sticky
+> « Par contre, puisque la partie listing des centres a un top-0, il faut donc l'ajuster non ? Pour ne plus être zéro, sinon le header va le masquer ! Tu peux même vérifier les autres endroits où sticky est utilisé »
+
+**Ajustements :**
+- Augmentation de l'espacement (`top-32` au lieu de `top-12`) pour les colonnes latérales "sticky" de la section `CentersDirectory` (Centres) et `FaqSection` (FAQ).
+- Cet ajustement permet d'éviter que ces éléments ne disparaissent sous le nouveau header flottant lors du défilement de la page.
 
 ---
 

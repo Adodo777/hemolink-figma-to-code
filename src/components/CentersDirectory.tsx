@@ -27,7 +27,7 @@ export default function CentersDirectory() {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-start">
 
         {/* Partie Gauche : Titre + Menu des Départements + Filtres */}
-        <div className="w-full lg:w-1/3 lg:sticky lg:top-12">
+        <div className="w-full lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-zinc-950 tracking-tight leading-tight">
             Où donner votre sang ?
           </h2>

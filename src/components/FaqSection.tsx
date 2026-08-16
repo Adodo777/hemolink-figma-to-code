@@ -30,7 +30,7 @@ export default function FaqSection() {
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16 items-start">
         
         {/* Colonne Gauche : Titre et Sous-titre */}
-        <div className="xl:col-span-5 xl:sticky xl:top-12">
+        <div className="xl:col-span-5 xl:sticky xl:top-32 xl:self-start">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-zinc-950 tracking-tight leading-tight">
             Foire aux questions & Idées reçues
           </h2>
