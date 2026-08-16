@@ -26,6 +26,35 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "HemoLink Bénin — Don de Sang Bénin | Chaque Don Sauve des Vies",
   description: "Plateforme nationale d'information et de sensibilisation sur le don de sang au Bénin. Vérifiez votre éligibilité en 30s et localisez le centre le plus proche.",
+  keywords: ["Don de sang", "Bénin", "CNTS", "Transfusion sanguine", "Sauver des vies", "Santé Bénin", "HemoLink"],
+  authors: [{ name: "HemoLink Bénin" }],
+  openGraph: {
+    title: "HemoLink Bénin — Chaque Don Sauve des Vies",
+    description: "Plateforme numérique citoyenne dédiée à la sensibilisation et à l'orientation des donneurs de sang au Bénin.",
+    url: "https://hemolink.bj", // Exemple d'URL
+    siteName: "HemoLink Bénin",
+    images: [
+      {
+        url: "/open-graph.webp",
+        width: 1200,
+        height: 630,
+        alt: "HemoLink Bénin - Plateforme du don de sang",
+      },
+    ],
+    locale: "fr_BJ",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HemoLink Bénin — Chaque Don Sauve des Vies",
+    description: "Vérifiez votre éligibilité au don de sang au Bénin en 30s et localisez le centre le plus proche.",
+    images: ["/open-graph.webp"],
+  },
+  icons: {
+    icon: "/hemolink.webp",
+    shortcut: "/hemolink.webp",
+    apple: "/hemolink.webp",
+  },
 };
 
 export default function RootLayout({

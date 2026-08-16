@@ -35,7 +35,7 @@ export default function Hero() {
 
           {/* Thème Cursif */}
           <p className="-mt-3 sm:-mt-4 text-xl md:text-2xl tracking-[0.05em] font-medium text-blood-300 font-script">
-            Thème : Donner son sang, un acte citoyen pour sauver des vies
+            Donner son sang, un acte citoyen pour sauver des vies
           </p>
 
           {/* Boutons CTA Standardisés */}

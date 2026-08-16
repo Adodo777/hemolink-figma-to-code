@@ -32,22 +32,19 @@ export default function EligibilitySimulator() {
   };
 
   return (
-    <section id="simulateur" className="hemo-container mt-12 sm:mt-16">
-      <div className="bg-white rounded-[32px] border border-blood-gray-100 shadow-sm relative overflow-hidden flex flex-col lg:flex-row items-stretch">
+    <section id="simulateur" className="hemo-container mt-20 sm:mt-32">
+      <div className="bg-blood-gray-950 rounded-[32px] shadow-lg relative flex flex-col lg:flex-row items-stretch p-2 sm:p-4">
         {/* Colonne Gauche : Textes & Critères */}
-        <div className="w-full lg:w-5/12 bg-blood-gray-950 text-white p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+        <div className="w-full lg:w-5/12 text-white p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
             Êtes-vous éligible au don ?
           </h2>
-          <p className="mt-4 text-xl sm:text-2xl text-blood-300 font-script font-bold">
-            Test médical immédiat en 30s
-          </p>
           
           <div className="mt-10">
-            <h3 className="font-bold text-white text-sm sm:text-base mb-4 uppercase tracking-wider">
+            <h3 className="text-xl sm:text-2xl text-blood-300 font-script font-bold">
               Qui peut donner ?
             </h3>
-            <ul className="text-blood-gray-300 text-sm space-y-3 list-disc list-inside">
+            <ul className="text-zinc-300 text-sm space-y-3 list-disc list-inside">
               <li>Avoir entre <strong>18 et 65 ans</strong> révolus.</li>
               <li>Peser au minimum <strong>50 kg</strong>.</li>
               <li>Être en <strong>bonne santé</strong> générale.</li>
@@ -55,9 +52,9 @@ export default function EligibilitySimulator() {
           </div>
         </div>
 
-        {/* Colonne Droite : Formulaire de simulation */}
-        <div className="w-full lg:w-7/12 bg-white rounded-[32px] overflow-hidden text-blood-gray-950 p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
-          <p className="text-blood-gray-500 text-sm leading-relaxed mb-8">
+        {/* Colonne Droite : Formulaire de simulation (Carte complètement arrondie) */}
+        <div className="w-full lg:w-7/12 bg-white rounded-[32px] shadow-sm text-zinc-950 p-6 sm:p-10 lg:p-12 flex flex-col justify-center m-0 lg:m-2">
+          <p className="text-zinc-500 text-sm leading-relaxed mb-8">
             Remplissez ce formulaire pour simuler votre éligibilité en fonction de vos paramètres personnels et de l'historique de vos dons.
           </p>
           
@@ -65,7 +62,7 @@ export default function EligibilitySimulator() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Âge */}
               <div>
-                <label htmlFor="input-age" className="block text-xs font-bold uppercase tracking-wider text-blood-gray-700 mb-2">
+                <label htmlFor="input-age" className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-2">
                   Votre âge (en années) <span className="text-blood-600">*</span>
                 </label>
                 <input
@@ -83,7 +80,7 @@ export default function EligibilitySimulator() {
 
               {/* Poids */}
               <div>
-                <label htmlFor="input-weight" className="block text-xs font-bold uppercase tracking-wider text-blood-gray-700 mb-2">
+                <label htmlFor="input-weight" className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-2">
                   Votre poids (en kg) <span className="text-blood-600">*</span>
                 </label>
                 <input
@@ -101,7 +98,7 @@ export default function EligibilitySimulator() {
 
               {/* Sexe */}
               <div>
-                <label htmlFor="input-gender" className="block text-xs font-bold uppercase tracking-wider text-blood-gray-700 mb-2">
+                <label htmlFor="input-gender" className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-2">
                   Sexe biologique <span className="text-blood-600">*</span>
                 </label>
                 <select
@@ -119,8 +116,8 @@ export default function EligibilitySimulator() {
 
               {/* Date dernier don */}
               <div>
-                <label htmlFor="input-last-donation" className="block text-xs font-bold uppercase tracking-wider text-blood-gray-700 mb-2">
-                  Date du dernier don <span className="text-blood-gray-400 font-normal lowercase">(optionnel)</span>
+                <label htmlFor="input-last-donation" className="block text-xs font-bold uppercase tracking-wider text-zinc-700 mb-2">
+                  Date du dernier don <span className="text-zinc-400 font-normal lowercase">(optionnel)</span>
                 </label>
                 <input
                   type="date"
@@ -137,7 +134,7 @@ export default function EligibilitySimulator() {
               Calculer mon statut d&apos;éligibilité
             </Button>
             
-            <p className="text-center text-xs text-blood-gray-400 mt-4 font-medium">
+            <p className="text-center text-xs text-zinc-400 mt-4 font-medium">
               * Note : Ce simulateur est à titre indicatif. Seul un entretien médical professionnel peut confirmer définitivement votre aptitude au don.
             </p>
           </form>

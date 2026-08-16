@@ -26,7 +26,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-blood-gray-700">
+          <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-zinc-700">
             <a href="#pourquoi-donner" className="hover:text-blood-600 transition-colors">À propos</a>
             <a href="#simulateur" className="hover:text-blood-600 transition-colors">Éligibilité</a>
             <a href="#deroulement" className="hover:text-blood-600 transition-colors">Parcours</a>
@@ -41,7 +41,7 @@ export default function Header() {
             </Button>
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="md:hidden p-2 text-blood-gray-700 hover:text-blood-600"
+              className="md:hidden p-2 text-zinc-700 hover:text-blood-600"
               aria-label="Ouvrir le menu"
             >
               <Menu className="w-6 h-6" />

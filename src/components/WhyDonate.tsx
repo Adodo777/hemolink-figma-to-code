@@ -32,7 +32,7 @@ const whyDonateData = [
 
 export default function WhyDonate() {
   return (
-    <section id="pourquoi-donner" className="hemo-container mt-12 sm:mt-16">
+    <section id="pourquoi-donner" className="hemo-container mt-10 sm:mt-12">
       <div>
         {/* Conteneur Stacking Cards au Scroll */}
         <div className="relative space-y-16 sm:space-y-24 pb-8 mb-16 mt-4">
@@ -58,12 +58,12 @@ export default function WhyDonate() {
                   >
                     <div>
                       {/* Overline contextuel pour remplacer le titre global */}
-                      <span className="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-widest text-blood-gray-500 bg-blood-gray-100 rounded-lg">
+                      <span className="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-widest text-zinc-500 bg-blood-gray-100 rounded-lg">
                         {item.overline}
                       </span>
 
                       {/* Title & Subtitle */}
-                      <h3 className="font-bold text-blood-gray-950 text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-snug">
+                      <h3 className="font-bold text-zinc-950 text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-snug">
                         {item.title}
                       </h3>
                       <p className={`mt-2 text-sm sm:text-base font-bold uppercase tracking-wide ${item.textColor}`}>
@@ -71,7 +71,7 @@ export default function WhyDonate() {
                       </p>
 
                       {/* Description */}
-                      <p className="mt-6 text-sm sm:text-base text-blood-gray-600 leading-relaxed">
+                      <p className="mt-6 text-sm sm:text-base text-zinc-600 leading-relaxed">
                         {item.description}
                       </p>
                     </div>
