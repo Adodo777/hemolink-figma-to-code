@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@types/node':
+        specifier: ^26.2.0
+        version: 26.2.0
+      '@types/react':
+        specifier: ^19.2.18
+        version: 19.2.18
+      '@types/react-dom':
+        specifier: ^19.2.4
+        version: 19.2.4(@types/react@19.2.18)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -26,16 +35,10 @@ importers:
       tailwind-merge:
         specifier: 3.6.0
         version: 3.6.0
+      typescript:
+        specifier: ^7.0.2
+        version: 7.0.2
     devDependencies:
-      '@types/node':
-        specifier: ^26.2.0
-        version: 26.2.0
-      '@types/react':
-        specifier: ^19.2.18
-        version: 19.2.18
-      '@types/react-dom':
-        specifier: ^19.2.4
-        version: 19.2.4(@types/react@19.2.18)
       autoprefixer:
         specifier: 10.5.4
         version: 10.5.4(postcss@8.5.2)
@@ -45,9 +48,6 @@ importers:
       tailwindcss:
         specifier: 3.4.19
         version: 3.4.19
-      typescript:
-        specifier: ^7.0.2
-        version: 7.0.2
 
 packages:
 
